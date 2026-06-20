@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/CSS/style.css" />
+
+
+    <title>Product-XHR-4</title>
+  </head>
+  <body class="bg-info">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 offset-md-4">
+          <div class="card  shadow-lg border border-danger mt-4 ">
+            <div class="card-header text-center bg-danger"><i class="fa-solid fa-store"></i><strong>Shopping Cart</strong></div>
+            <form class="form-group p-3" id="productForm">
+             <div>
+              <label for="title"><strong>Title</strong></label>
+              <input type="text" placeholder="Enter Title" class="form-control" id="title">
+             </div>
+              <div>
+              <label for="price"><strong>Price</strong></label>
+              <input type="text" placeholder="Enter Price" class="form-control " id="price">
+             </div>
+             <div>
+              <label for="descripation"><strong>Decreption</strong></label>
+              <input type="text"  placeholder="Add Decreption" class="form-control" id="descripation">
+             </div>
+             <div>
+              <label for="category"><strong>Category</strong></label>
+              <input type="text" placeholder="Add Category" class="form-control" id="category">
+             </div>
+             <div>
+              <label for="image"><strong><strong>Image</strong></strong></label>
+              <input type="text" class="form-control" placeholder="Add Image URL" id="image">
+             </div>
+             
+              <button class="btn btn-primary btn-sm btn-block mt-2" id="addbt">
+                Add Product
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary btn-sm btn-block mt-2 d-none"
+                id="updatId"
+              >
+                Update User
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-5" id="cardContaier">
+      
+        </div>
+      </div>
+    </div>
+    <div class="spinner d-none" id="spinner">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden"></span>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/JS/app.js"></script>
+  </body>
+</html>
